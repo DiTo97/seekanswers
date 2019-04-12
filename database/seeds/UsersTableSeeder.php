@@ -12,7 +12,7 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         factory(App\User::class, 3)->create()->each(function($fakeUser) {
-            $fakeUser->getQuestions()
+            $fakeUser->questions()
                 ->saveMany(
                     factory(App\Question::class, mt_rand(1, 5))->make()
                 );

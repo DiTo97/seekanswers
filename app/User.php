@@ -40,7 +40,11 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function getQuestions(): HasMany {
+    public function questions() {
         return $this->hasMany(Question::class);
+    }
+
+    public function getUrlAttribute() {
+        return '#';
     }
 }
