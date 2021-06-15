@@ -1,2 +1,3 @@
 # SeekAnswers
-Q&amp;A made easy
+
+Q&amp;A made easy inspired by StackOverflow.
